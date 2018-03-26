@@ -1,5 +1,9 @@
 # Theme center for Hugo
 
+A simple single page theme for the open-source static site generator [Hugo](https://gohugo.io/)
+
+![Theme Hugo center](images/tn.png)
+
 ## Installation
 
     git clone git@github.com:MIKAGMR/hugo-center.git themes/hugos-center
