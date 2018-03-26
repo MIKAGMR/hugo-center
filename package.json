@@ -1,6 +1,6 @@
 {
   "name": "hugo-center",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Basic single page theme",
   "scripts": {
     "clear": "rimraf ./static/css/** & rimraf ./data/config/manifest.json",
