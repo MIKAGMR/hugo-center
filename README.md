@@ -44,7 +44,7 @@ The theme use
 + [PostCSS](http://postcss.org/)
 + [Purgecss](https://www.purgecss.com/)
 
-The configuration files are in the theme folder and the postcss files are in the ```static/css``` folder.
+The configuration files are in the theme folder and the postcss files are in the ```src``` folder.
 
 
 ### Development build
