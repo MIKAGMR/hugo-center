@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en" class="font-sans text-sm sm:text-base md:text-lg antialiased h-full bg-black">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ .Site.Title }}</title>
+    {{ $fileName := (index .Site.Data.config.manifest "center.css") }}
+    {{ $filePath := (printf "themes/hugo-center/static/css/%s" $fileName) }}
+    {{ if .Site.Params.enable.inlinecss }}
+    <style>{{ (readFile $filePath) | safeCSS }}</style>
+    {{ else }}
+    <link href="css/{{ $fileName }}" rel="stylesheet">
+    {{ end }}
+</head>
+<body class="flex items-center justify-center h-full text-grey">
+{{ block "main" . }}
+{{ end }}
+
+{{ block "footer" . }}
+{{ end }}
+
+
+
+</body>
+</html>
+

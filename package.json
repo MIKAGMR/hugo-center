@@ -1,0 +1,36 @@
+{
+  "name": "hugo-center",
+  "version": "1.0.0",
+  "description": "Basic one page theme",
+  "main": "index.js",
+  "scripts": {
+    "commit": "git-cz",
+    "clear": "rimraf ./static/css/** & rimraf ./data/config/manifest.json",
+    "purgecss": "purgecss -c ./purgecss.config.js -o ./static/css/",
+    "start": "NODE_ENV=development postcss ./src/style.css -o ./static/css/center.css",
+    "prestart": "npm run clear",
+    "build": "NODE_ENV=production postcss ./src/style.css -o ./static/css/center.css",
+    "prebuild": "npm run clear",
+    "postbuild": "purgecss -c ./purgecss.config.js -o ./static/css/"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "cssnano": "^3.10.0",
+    "postcss-cli": "^5.0.0",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-hash": "^0.2.1",
+    "postcss-import": "^11.1.0",
+    "purgecss": "^0.20.0",
+    "purgecss-from-html": "^1.0.0",
+    "rimraf": "^2.6.2",
+    "tailwindcss": "^0.4.2",
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

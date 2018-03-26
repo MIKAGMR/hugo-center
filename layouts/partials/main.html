@@ -1,0 +1,8 @@
+<main class="flex-1 max-w m-2">
+<h1 class="text-center text-orange">{{ .Site.Params.title }}</h1>
+<h2 class="text-center uppercase tracking-wide mt-1">{{ .Site.Params.subtitle }}</h2>
+{{ if eq $.Site.Params.enable.iconsInFooter false }}
+{{ partial "icons.html" . }}
+{{ end }}
+</main>
+<!---->

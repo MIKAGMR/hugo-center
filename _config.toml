@@ -1,0 +1,83 @@
+baseURL = ""
+theme = "hugo-center"
+languageCode = "en-us"
+title = "John Doe"
+
+disableKinds= ["sitemap", "RSS"]
+
+[taxonomies]
+  tag = ""
+  group = ""
+  category = ""
+
+[params]
+    title = "John Doe"
+    subtitle = "Dead or Alive"
+
+[params.enable]
+        inlineCSS = true        # Write the CSS in a style tag or use a link tag
+        iconsInFooter = false   # Show icons in footer or below the subtitle
+
+[[params.contact.info]]
+    name = "Email"
+    icon = "envelope"
+    link = "" # Use mailto (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#Creating_an_email_link)
+
+[[params.contact.social]]
+    name = "XING"
+    icon = "xing"
+    link = "//www.xing.com/"
+[[params.contact.social]]
+    name = "Linkedin"
+    icon = "linkedin-in"
+    link = "//de.linkedin.com/"
+[[params.contact.social]]
+    name = "Twitter"
+    icon = "twitter"
+    link = "//twitter.com/"
+[[params.contact.social]]
+    name = "Google+"
+    icon = "google-plus-g"
+    link = "//plus.google.com/"
+
+#[[params.contact.social]]
+#	name = "facebook"
+#	icon = "facebook-f"
+#	link = "//"
+#[[params.contact.social]]
+#	name = "Github"
+#	icon = "github"
+#	link = "//"
+#[[params.contact.social]]
+#	name = "gitlab"
+#	icon = "gitlab"
+#	link = "//"
+#[[params.contact.social]]
+#	name = "pinterest"
+#	icon = "pinterest"
+#	link = "//"
+#[[params.contact.social]]
+#	name = "instagram"
+#	icon = "instagram"
+#	link = "//"
+#[[params.contact.social]]
+#	name = "soundcloud"
+#	icon = "soundcloud"
+#	link = "//"
+#[[params.contact.social]]
+#	name = "Youtube"
+#	icon = "youtube"
+#	link = "//"
+#[[params.contact.social]]
+#	name = "deviantart"
+#	icon = "deviantart"
+#	link = "//"
+#[[params.contact.social]]
+#	name = "dribbble"
+#	icon = "dribbble"
+#	link = "//"
+#[[params.contact.social]]
+#	name = "behance"
+#	icon = "behance"
+#	link = "//"
+

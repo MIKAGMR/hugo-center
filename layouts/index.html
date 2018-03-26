@@ -1,0 +1,8 @@
+{{ define "main" }}
+  {{ partial "main.html" . }}
+{{ end }}
+{{ define "footer" }}
+  {{ if eq .Site.Params.enable.iconsInFooter true }}
+    {{ partial "footer.html" . }}
+  {{ end }}
+{{ end }}

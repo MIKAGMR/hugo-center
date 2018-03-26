@@ -1,0 +1,3 @@
+:focus {
+  outline: config('colors.orange') solid 2px;
+}

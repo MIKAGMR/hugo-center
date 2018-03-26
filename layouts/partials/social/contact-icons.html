@@ -1,0 +1,7 @@
+{{ range .Site.Params.contact.info}}
+{{ $fileName := (printf "%s.svg" .icon)}}
+{{ $filePath := (printf "themes/hugo-center/layouts/partials/social/icons/contact/%s" $fileName) }}
+<a href="{{ .link }}" class="icon p-3 text-orange" title="{{ .name }}">
+    {{- readFile $filePath | safeHTML -}}
+</a>
+{{ end }}
