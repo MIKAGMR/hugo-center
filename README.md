@@ -6,7 +6,7 @@ A simple single page theme for the open-source static site generator [Hugo](http
 
 ## Installation
 
-    git clone git@github.com:MIKAGMR/hugo-center.git themes/hugos-center
+    git clone git@github.com:MIKAGMR/hugo-center.git themes/hugo-center
     
 
 
