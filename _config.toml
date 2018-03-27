@@ -13,6 +13,9 @@ disableKinds= ["sitemap", "RSS"]
 [params]
     title = "John Doe"
     subtitle = "Dead or Alive"
+    author = ""
+    description = ""
+    keywords = []
 
 [params.enable]
         inlineCSS = true        # Write the CSS in a style tag or use a link tag
